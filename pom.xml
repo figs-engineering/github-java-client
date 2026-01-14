@@ -4,7 +4,7 @@
     <groupId>com.figs.github</groupId>
     <name>github-java-client</name>
     <artifactId>github-client</artifactId>
-    <version>0.5.6-SNAPSHOT</version>
+    <version>0.5.6</version>
 
     <licenses>
         <license>
@@ -28,11 +28,11 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>central</id>
+            <id>artifactory</id>
             <url>https://app-figs-640667908132.d.codeartifact.us-east-1.amazonaws.com/maven/app-figs-artifactory</url>
         </snapshotRepository>
         <repository>
-            <id>central</id>
+            <id>artifactory</id>
             <url>https://app-figs-640667908132.d.codeartifact.us-east-1.amazonaws.com/maven/app-figs-artifactory</url>
         </repository>
     </distributionManagement>
