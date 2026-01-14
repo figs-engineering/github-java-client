@@ -189,12 +189,12 @@ public class GitDataClientTest {
             "sha", "aa218f56b14c9653891f9e74264a383fa43fefbd",
             "force", false);
     when(github.patch(
-        "/repos/someowner/somerepo/git/refs/featureA",
+        "/repos/someowner/somerepo/git/refs/heads/featureA",
         github.json().toJsonUnchecked(body),
         Reference.class))
         .thenReturn(fixture);
     final Reference reference =
-        gitDataClient.updateReference("featureA", "aa218f56b14c9653891f9e74264a383fa43fefbd", false).get();
+        gitDataClient.updateReference("refs/heads/featureA", "aa218f56b14c9653891f9e74264a383fa43fefbd", false).get();
     assertThat(reference.ref(), is("refs/heads/featureA"));
     assertThat(reference.object().sha(), is("aa218f56b14c9653891f9e74264a383fa43fefbd"));
   }

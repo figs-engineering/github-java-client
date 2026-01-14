@@ -197,7 +197,7 @@ public class GitDataClient {
    *              this to false will make sure you're not overwriting work.
    */
   public CompletableFuture<Reference> updateReference(final String ref, final String sha, final boolean force) {
-    final String path = format(REFERENCE_URI, owner, repo, ref);
+    final String path = format(REFERENCE_URI, owner, repo, ref.replaceFirst("^refs/", ""));
     final ImmutableMap<String, Object> body =
         of(
             "sha", sha,
