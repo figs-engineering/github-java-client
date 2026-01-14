@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.figs.github</groupId>
     <name>github-java-client</name>
     <artifactId>github-client</artifactId>
     <version>0.5.6-SNAPSHOT</version>
-
-    <parent>
-        <groupId>com.spotify</groupId>
-        <artifactId>foss-root</artifactId>
-        <version>15</version>
-    </parent>
 
     <licenses>
         <license>
@@ -20,9 +15,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/spotify/github-java-client.git</connection>
-        <developerConnection>scm:git:git@github.com:spotify/github-java-client.git</developerConnection>
-        <url>scm:https://github.com/spotify/github-java-client/</url>
+        <connection>scm:git:https://github.com/figs-engineering/github-java-client.git</connection>
+        <developerConnection>scm:git:git@github.com:figs-engineering/github-java-client.git</developerConnection>
+        <url>scm:https://github.com/figs-engineering/github-java-client/</url>
         <tag>v0.3.7</tag>
     </scm>
 
@@ -34,11 +29,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>central</id>
-            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <url>https://app-figs-640667908132.d.codeartifact.us-east-1.amazonaws.com/maven/app-figs-artifactory</url>
         </snapshotRepository>
         <repository>
             <id>central</id>
-            <url>https://central.sonatype.com/repository/maven-releases/</url>
+            <url>https://app-figs-640667908132.d.codeartifact.us-east-1.amazonaws.com/maven/app-figs-artifactory</url>
         </repository>
     </distributionManagement>
 
